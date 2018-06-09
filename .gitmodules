@@ -1,0 +1,3 @@
+[submodule "frameworks/PHP/peachpie/peachpie"]
+	path = frameworks/PHP/peachpie/peachpie
+	url = https://github.com/bgrainger/peachpie.git
