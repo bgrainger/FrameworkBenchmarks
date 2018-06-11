@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Peachpie.Compiler.Tools" Version="0.9.1-dev" />
-    <ProjectReference Include="..\peachpie\src\Peachpie.NET.Sdk\Peachpie.NET.Sdk.csproj" />
+    <PackageReference Include="Peachpie.NET.Sdk" Version="0.9.1-dev" PrivateAssets="Build" />
   </ItemGroup>
 
 </Project>
