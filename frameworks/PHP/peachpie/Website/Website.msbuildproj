@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="**/*.php" />
+  </ItemGroup>
+
+  <ItemGroup>
     <DotNetCliToolReference Include="Peachpie.Compiler.Tools" Version="0.9.1-dev" />
     <PackageReference Include="Peachpie.NET.Sdk" Version="0.9.1-dev" PrivateAssets="Build" />
   </ItemGroup>
