@@ -11,10 +11,10 @@
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.0-rc1-final" />
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.1.0-rc1-final" />
     <PackageReference Include="Microsoft.AspNetCore.Buffering" Version="0.2.2" />
+    <PackageReference Include="Peachpie.NETCore.Web" Version="0.9.1-dev" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\peachpie\src\Peachpie.NETCore.Web\Peachpie.NETCore.Web.csproj" />
     <ProjectReference Include="..\Website\Website.msbuildproj" />
   </ItemGroup>
 
