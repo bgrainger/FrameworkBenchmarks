@@ -6,10 +6,9 @@
 function fortune() {
   // Database connection // TODO: use PDO once implemented
   $link = mysql_connect('tfb-database', 'benchmarkdbuser', 'benchmarkdbpass');
-  mysql_select_db('hello_world', $link);
     
   // Store result in array.
-  $result = mysql_query('SELECT id, message FROM Fortune', $link);
+  $result = mysql_query('SELECT id, message FROM hello_world.Fortune', $link);
   $arr = array();
   while ($row = mysql_fetch_array($result)) {
     $arr[$row['id']] = $row['message'];
