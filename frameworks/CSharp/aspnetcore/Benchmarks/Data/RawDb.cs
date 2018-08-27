@@ -63,9 +63,7 @@ namespace Benchmarks.Data
             id.DbType = DbType.Int32;
             id.Value = _random.Next(1, 10001);
             cmd.Parameters.Add(id);
-
-            (cmd as MySql.Data.MySqlClient.MySqlCommand)?.Prepare();
-
+            cmd.Prepare();
             return cmd;
         }
 
@@ -149,7 +147,7 @@ namespace Benchmarks.Data
                 db.ConnectionString = _connectionString;
                 await db.OpenAsync();
 
-                (cmd as MySql.Data.MySqlClient.MySqlCommand)?.Prepare();
+                cmd.Prepare();
 
                 using (var rdr = await cmd.ExecuteReaderAsync(CommandBehavior.CloseConnection))
                 {
