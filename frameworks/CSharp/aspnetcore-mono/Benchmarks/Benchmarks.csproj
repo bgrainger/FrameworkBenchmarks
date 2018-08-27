@@ -28,8 +28,8 @@
     <!-- Fix https://github.com/aspnet/KestrelHttpServer/pull/2562  -->
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets" Version="2.1.0-rtm-30793" />
     <PackageReference Include="MySqlConnector" Version="0.44.1" />
-    <PackageReference Include="Npgsql" Version="4.0.0-rc1" />
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.0-rc1" />
+    <PackageReference Include="Npgsql" Version="4.0.2" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.1.1" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net471' ">
