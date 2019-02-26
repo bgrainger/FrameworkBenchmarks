@@ -1,6 +1,8 @@
 FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /app
 COPY PlatformBenchmarks .
+COPY Directory.Build.props /
+COPY MySqlConnector/src/MySqlConnector /MySqlConnector
 RUN dotnet publish -c Release -o out
 
 FROM microsoft/dotnet:2.2-aspnetcore-runtime AS runtime

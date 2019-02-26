@@ -1,0 +1,3 @@
+[submodule "frameworks/CSharp/aspnetcore/MySqlConnector"]
+	path = frameworks/CSharp/aspnetcore/MySqlConnector
+	url = https://github.com/bgrainger/MySqlConnector.git
